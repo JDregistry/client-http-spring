@@ -1,0 +1,3 @@
+rootProject.name = 'http-spring'
+enableFeaturePreview('STABLE_PUBLISHING')
+
