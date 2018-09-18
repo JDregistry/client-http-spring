@@ -1,0 +1,26 @@
+{
+  "package": {
+    "name": "client-http-spring",
+    "repo": "jdregistry",
+    "subject": "lukaszimmermann",
+    "labels": ["kotlin", "bintray", "gradle", "docker", "registry", "client", "Spring", "spring"],
+    "vcs_url": "https://github.com/lukaszimmermann/JDregistry-spring",
+    "licenses": ["MIT"]
+  },
+
+  "version": {
+    "name": "0.0.5",
+    "released": "2018-09-18",
+    "gpgSign": false
+  },
+
+  "files":
+  [
+    {
+      "includePattern": "build/libs/(.*)",
+      "uploadPattern": "jdregistry/client/http-spring/0.0.5/$1",
+      "matrixParams": { "override": 1 }
+    }
+  ],
+  "publish": true
+}
