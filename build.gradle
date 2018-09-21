@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'jdregistry.client'
-version '0.0.5'
+version '0.0.6'
 
 sourceCompatibility = 1.8
 
@@ -35,7 +35,7 @@ dependencies {
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-stdlib-jdk8', version: '1.2.70'
 
     // The Docker Registry Client implementation that the PHT library depends on
-    compile group: 'jdregistry.client', name: 'http', version: '0.0.5'
+    compile group: 'jdregistry.client', name: 'http', version: '0.0.6'
     compile group: 'org.springframework', name: 'spring-web', version: '5.0.9.RELEASE'
 
     testCompile group: 'jdregistry', name: 'test', version: '0.0.5'
@@ -46,7 +46,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             from components.java
-            version '0.0.5'
+            version '0.0.6'
             pom.withXml {
                 asNode().dependencies.'*'.findAll() {
                     it.scope.text() == 'runtime' && project.configurations.compile.allDependencies.find { dep ->
@@ -62,7 +62,7 @@ publishing {
 
 model {
     tasks.generatePomFileForMavenPublication {
-        destination = file("$buildDir/libs/http-spring-0.0.5.pom")
+        destination = file("$buildDir/libs/http-spring-0.0.6.pom")
     }
 }
 

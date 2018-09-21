@@ -9,7 +9,7 @@
   },
 
   "version": {
-    "name": "0.0.5",
+    "name": "0.0.6",
     "released": "2018-09-18",
     "gpgSign": false
   },
@@ -18,7 +18,7 @@
   [
     {
       "includePattern": "build/libs/(.*)",
-      "uploadPattern": "jdregistry/client/http-spring/0.0.5/$1",
+      "uploadPattern": "jdregistry/client/http-spring/0.0.6/$1",
       "matrixParams": { "override": 1 }
     }
   ],
